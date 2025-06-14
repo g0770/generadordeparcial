@@ -1,7 +1,7 @@
 
 import os
 
-def inputExc(tipo = str, msg = 'Ingrese el dato a continuación: '):
+def inputExc(tipo = str, msg:str = 'Ingrese el dato a continuación: '):
   while True:
     try:
       resp = tipo(input(msg))
@@ -16,7 +16,7 @@ def clearCmd():
   except:
     os.system('clear')
 
-def menuOptions (typeMsg:str = 'main', needsResponse:bool = True, responseMsg:str = None):
+def menuOptions (typeMsg:str = 'main', needsResponse:bool = True, responseMsg:str = 'Ingrese el dato a continuación: '):
   match typeMsg:
     case 'main':
       print('[1] GENERATE NEW QUESTIONS')
