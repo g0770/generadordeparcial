@@ -1,32 +1,30 @@
 import random
 import content.modules.questionManager as qm
 import content.modules.fileManager as fm
+from content.modules.mainModules import inputExc,menuOptions
 
-#TODO PASAR LAS PREGUNTAS
-#TODO CREAR PARTE 3
-#TODO CHUPAR PIJA ok hecho DONE
+programDefaultSettings = {
+  'temas': 3,
+  'cantPreguntasMax':  [fm.obtenerCantidadPreguntasDeTema(1), fm.obtenerCantidadPreguntasDeTema(2), fm.obtenerCantidadPreguntasDeTema(3)]
+}
+programSettings = programDefaultSettings.copy()
 
-def inputExc(tipo = str, msg = 'Ingrese el dato a continuación: '):
-  while True:
-    try:
-      resp = tipo(input(msg))
-      break
-    except Exception as e:
-      print(e)
-  return resp
+contenido = {
+  'tema 1': [],
+  'tema 2': []
+}
 
-cantTotalPreguntasParte1 = fm.obtenerCantidadPreguntasDeTema(1)
-cantTotalPreguntasParte2 = fm.obtenerCantidadPreguntasDeTema(2)
-
-cantParte1, cantParte2 = 0, 0
 while True:
-  cantParte1 = inputExc(int, f"Cuantas preguntas de la Parte 1? (max: {cantTotalPreguntasParte1}): ")
-  if cantParte1 >= 0 and cantParte1 <= cantTotalPreguntasParte1:
-    break
-while True:
-  cantParte2 = inputExc(int, f"Cuantas preguntas de la Parte 2? (max: {cantTotalPreguntasParte2}): ")
-  if cantParte2 >= 0 and cantParte2 <= cantTotalPreguntasParte2:
-    break
+  r = menuOptions()
+  match r:
+    case 1:
+      cantP = []
+      for index in range(programSettings['temas']):
+        while True:
+          tempCantPreg = inputExc(int, f"Cuantas preguntas de la Parte {index+1}? (max: {programSettings['cantPreguntasMax'][index]}): ")
+          if cantParte1 >= 0 and cantParte1 <= programSettings['cantPreguntasMax'][index]:
+            break
+        cantP.append(tempCantPreg)
 
 parte1Preguntas = []
 parte2Preguntas = []
@@ -47,10 +45,7 @@ for i in range(cantParte2):
       parte2Preguntas.append(tempQuestion)
       break
 
-contenido = {
-  'tema 1': parte1Preguntas,
-  'tema 2': parte2Preguntas
-}
+
 
 qm.toMarkDown(contenido)
 print("Simulacro generado como 'parciales.md'")
