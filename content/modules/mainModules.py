@@ -19,15 +19,16 @@ def clearCmd():
 def menuOptions (typeMsg:str = 'main', needsResponse:bool = True, responseMsg:str = 'Ingrese el dato a continuación: '):
   match typeMsg:
     case 'main':
-      print('[1] GENERATE NEW QUESTIONS')
-      print('[2] IMPORT TO .MD AND .PDF')
-      print('[3] PROGRAM SETTINGS')
-      print('[0] EXIT PROGRAM')
+      print('[1] GENERAR NUEVAS PREGUNTAS')
+      print('[2] IMPORTAR A .MD')
+      print('[3] IMPORTAR A .PDF')
+      print('[4] OPCIONES DE PROGRAMA')
+      print('[0] SALIR DEL PROGRAMA')
     case 'settings':
-      print('[1] CHANGE AMOUNT OF "TIPOS"')
-      print('[2] SET TO DEFAULT SETTINGS')
-      print('[3] RELOAD AMOUNT OF QUESTIONS (FOR EVERY STEP)')
-      print('[0] GO BACK')
+      print('[1] CAMBIAR CANTIDAD DE PARTES')
+      print('[2] DEVOLVER LOS VALORES A SU VALOR DEFAULT')
+      print('[3] RECARGAR CANTIDAD MAXIMA DE PREGUNTAS (DE PARTE)')
+      print('[0] VOLVER')
       
   
   if needsResponse:
