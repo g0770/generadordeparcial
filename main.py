@@ -40,10 +40,13 @@ while True:
                 programSettings['contenido'][f'parte {index+1}'].append(tempQuestion)
                 break
     case 2:
-      qm.toMarkDown(programSettings['contenido'])
+      qm.toMarkDown(programSettings)
       print("Simulacro generado como 'parciales.md'")
       input('Enter para continuar... ')
     case 3:
-      pass
+      qm.toMarkDown(programSettings)
+      qm.markdownToPDF("parciales.md")
+      print("Simulacro generado como 'parciales.pdf' y 'parciales.md'")
+      input('Enter para continuar... ')
     case 4:
       programSettings = s.settingsMain(programSettings, programDefaultSettings)
