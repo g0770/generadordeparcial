@@ -20,11 +20,11 @@ cantTotalPreguntasParte2 = fm.obtenerCantidadPreguntasDeTema(2)
 
 cantParte1, cantParte2 = 0, 0
 while True:
-  cantParte1 = inputExc(int, "cuantos del tema1: ")
+  cantParte1 = inputExc(int, f"Cuantas preguntas de la Parte 1? (max: {cantTotalPreguntasParte1}): ")
   if cantParte1 >= 0 and cantParte1 <= cantTotalPreguntasParte1:
     break
 while True:
-  cantParte2 = inputExc(int, "cuantos del tema2: ")
+  cantParte2 = inputExc(int, f"Cuantas preguntas de la Parte 2? (max: {cantTotalPreguntasParte2}): ")
   if cantParte2 >= 0 and cantParte2 <= cantTotalPreguntasParte2:
     break
 
@@ -53,3 +53,4 @@ contenido = {
 }
 
 qm.toMarkDown(contenido)
+print("Simulacro generado como 'parciales.md'")

@@ -42,13 +42,13 @@ def questionCreation(data:str = './content/enunciados/', questionType:str = 'sal
   
 def toMarkDown(preguntas):
   md = open("parciales.md", "w+")
-  md.write('# parcial simulado \n')
+  md.write('# Simulacro de Parcial \n')
   
-  md.write('## tema 1\n')
+  md.write('## Tema 1\n')
   for i in preguntas['tema 1']:
     md.write(i)
 
-  md.write('## tema 2\n')
+  md.write('## Tema 2\n')
   for i in preguntas['tema 2']:
     md.write(i)
     

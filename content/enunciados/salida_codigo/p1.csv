@@ -1,4 +1,4 @@
-¿cual es la salida del siguiente codigo?;print('hola', end='*')|print('python');holapython|hola*python|hola\npython|hola * python;hola*python
-¿que hace el siguiente codigo?;try:| x=10/0|except:|  print('Error')|finally:|  print('fin');solo imprime 'error'|solo imprime 'fin'|imprime 'error' y 'fin'|lanza una excepcion;imprime 'error' y 'fin'
-¿que hace el siguiente codigo?;import webbrowser|webbrowser.open('https://www.python.org');lanza una excepcion|ejecuta una consola web|abre el navegador con la url|nada;abre el navegador con la url
-¿que imprime este codigo?;x=5|print(f'resultado {x+3}');resultado: x+3|resultado: 53|resultado: 8|error;resultado: 8
+¿Cual es la salida del siguiente codigo?;print('Hola', end='*')|print('Python');HolaPython|Hola*Python|Hola\nPython|Hola * Python;Hola*Python
+¿Que hace el siguiente codigo?;try:| x=10/0|except:|  print('Error')|finally:|  print('Fin');Solo imprime 'Error'|Solo imprime 'Fin'|Imprime 'Error' y 'Fin'|Lanza una excepcion;Imprime 'Error' y 'Fin'
+¿Que hace el siguiente codigo?;import webbrowser|webbrowser.open('https://www.python.org');Lanza una excepcion|Ejecuta una consola web|Abre el navegador con la url|Nada;Abre el navegador con la url
+¿Que imprime este codigo?;x=5|print(f'Resultado {x+3}');Resultado: x+3|Resultado: 53|Resultado: 8|Error;Resultado: 8
