@@ -44,9 +44,8 @@ while True:
       print("Simulacro generado como 'parciales.md'")
       input('Enter para continuar... ')
     case 3:
-      qm.toMarkDown(programSettings)
-      qm.markdownToPDF("parciales.md")
-      print("Simulacro generado como 'parciales.pdf' y 'parciales.md'")
+      qm.toPDF(programSettings)
+      print("Simulacro generado como 'parciales.pdf'")
       input('Enter para continuar... ')
     case 4:
       programSettings = s.settingsMain(programSettings, programDefaultSettings)
