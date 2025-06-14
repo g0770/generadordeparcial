@@ -1,0 +1,1 @@
+indica la salida esperada o el error;lista=[1,2,3]|print(lista[5]);;IndexError: list index out of range

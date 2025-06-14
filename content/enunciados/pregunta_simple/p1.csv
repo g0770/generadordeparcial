@@ -1,0 +1,11 @@
+¿Que hace pip install -r requirements.txt?;;Guarda la lista de paquetes|Instala los paquetes listados en el archivo|Elimina todos los paquetes|Crea un entorno virtual;Instala los paquetes listados en el archivo
+¿Cual es el modulo usado para abrir una URL en el navegador desde Python?;;netbrowser|requests|webbrowser|urllib;webbrowser
+¿Que hace deactivate en un entorno virtual?;;Elimina el entorno|Cierra temporalmente el entorno|Reinicia los paquetes|Actualiza pip;Cierra temporalmente el entorno
+¿Cual es la funcion correcta para obtener la fecha de hoy?;;os.today()|datetime.now()|datetime.date.today()|date.time.now();datetime.now()
+¿Que hace os.listdir()?;;Crea un archivo|Lista carpetas disponibles|Lista archivos y carpetas del directorio actual|Cambia de directorio;Lista carpetas disponibles
+¿Cual es el uso principal del modulo webbrowser?;;Crear formularios|Conectarse a bases de datos|Abrir paginas web en el navegador|Descargar imagenes;Abrir paginas web en el navegador
+¿Que hace pip freeze > requirements.txt?;;Muestra los paquetes instalados|Instala paquetes|Elimina pip|Guarda los paquetes instalados en un archivo;Muestra los paquetes instalados
+¿Que modulo se usa para trabajar con archivos y rutas?;;os|random|pip|collections;os
+¿Que hace open('archivo.txt', 'a')?;;Reemplaza el contenido del archivo|Lee y cierra el archivo|Abre el archivo para agregar contenido|Abre un archivo para lectura binaria;Abre el archivo para agregar contenido
+¿Cual de estos errores es capturado con except ZeroDivisionError?;;Acceso fuera de rango|Division por cero|Conversion de tipo|Archivo no encontrado;Division por cero
+¿Que hace os.makedirs(""nueva/carpeta"") si no existe?;;Falla si no existe|Crea solo "carpeta"|Crea todo el arbol de carpetas|Renombra la carpeta actual;Crea todo el arbol de carpetas

@@ -1,0 +1,4 @@
+¿cual es la salida del siguiente codigo?;print('hola', end='*')|print('python');holapython|hola*python|hola\npython|hola * python;hola*python
+¿que hace el siguiente codigo?;try:| x=10/0|except:|  print('Error')|finally:|  print('fin');solo imprime 'error'|solo imprime 'fin'|imprime 'error' y 'fin'|lanza una excepcion;imprime 'error' y 'fin'
+¿que hace el siguiente codigo?;import webbrowser|webbrowser.open('https://www.python.org');lanza una excepcion|ejecuta una consola web|abre el navegador con la url|nada;abre el navegador con la url
+¿que imprime este codigo?;x=5|print(f'resultado {x+3}');resultado: x+3|resultado: 53|resultado: 8|error;resultado: 8
