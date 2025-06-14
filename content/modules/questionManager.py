@@ -11,7 +11,7 @@ def parseQuestionToStr(pregunta):
   pregunta[3] = 'Respuesta correcta: <span style="color: black; background: black;">' + pregunta[3][0] + '</span>'
   
   for i,value in enumerate(pregunta[1]):
-    pregunta[1][i] = '\t' + value + '\n'
+    pregunta[1][i] = '\t' + value
   if len(pregunta[2]) > 1:
     for i,value in enumerate(pregunta[2]):
       pregunta[2][i] = f' {i+1}) ' + value
