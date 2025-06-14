@@ -1,4 +1,4 @@
-from fpdf import FPDF, TextStyle
+from fpdf import FPDF, TextStyle, HTMLMixin
 import mistletoe
 import random
 
