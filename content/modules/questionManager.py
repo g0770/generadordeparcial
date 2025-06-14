@@ -1,3 +1,5 @@
+from fpdf import FPDF
+import markdown
 import random
 
 def parseQuestionToStr(pregunta):
@@ -54,3 +56,20 @@ def toMarkDown(preguntas):
     
     
   md.close()
+
+def markdownToPDF(md):
+  try:
+    archivo = open(md, "r")
+    text = archivo.read()
+    archivo.close()
+    html = markdown.markdown(text)
+    
+    pdf = FPDF()
+    pdf.add_page()
+
+    pdf.write_html(html)
+    pdf.output("parciales.pdf")
+  except Exception as e:
+    print(e)
+
+markdownToPDF("parciales.md")
