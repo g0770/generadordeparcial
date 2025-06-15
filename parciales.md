@@ -1,17 +1,16 @@
 # Simulacro de Parcial 
 
 ## Parte 1
-### ¿Que hace pip install -r requirements.txt?
+### ¿Que hace deactivate en un entorno virtual?
 
 	
 
- 1) Guarda la lista de paquetes
- 2) Instala los paquetes listados en el archivo
- 3) Elimina todos los paquetes
- 4) Crea un entorno virtual
+ 1) Elimina el entorno
+ 2) Cierra temporalmente el entorno
+ 3) Reinicia los paquetes
+ 4) Actualiza pip
 
-Respuesta correcta: <p style="color: black; background: black;">Instala los paquetes listados en el archivo
-</p>
+Respuesta correcta: <p style="color: black; background: black;">Cierra temporalmente el entorno</p>
 ### ¿Cual de estos errores es capturado con except ZeroDivisionError?
 
 	
@@ -22,26 +21,30 @@ Respuesta correcta: <p style="color: black; background: black;">Instala los paqu
  4) Archivo no encontrado
 
 Respuesta correcta: <p style="color: black; background: black;">Division por cero</p>
-### ¿Que hace pip freeze > requirements.txt?
+### ¿Qué hace datetime.datetime.now() en Python? 
 
-	
+	 import datetime
+	print(datetime.datetime.now()) 
 
- 1) Muestra los paquetes instalados
- 2) Instala paquetes
- 3) Elimina pip
- 4) Guarda los paquetes instalados en un archivo
+ 1)  Devuelve la fecha y hora actual
+ 2) Cierra el programa
+ 3) Borra el caché
+ 4) Compara dos fechas 
 
-Respuesta correcta: <p style="color: black; background: black;">Muestra los paquetes instalados</p>
-### ¿Cual es la funcion correcta para obtener la fecha de hoy?
+Respuesta correcta: <p style="color: black; background: black;"> Devuelve la fecha y hora actual
+</p>
+### ¿Que hace el siguiente codigo?
 
-	
+	import webbrowser
+	webbrowser.open('https://www.python.org')
 
- 1) os.today()
- 2) datetime.now()
- 3) datetime.date.today()
- 4) date.time.now()
+ 1) Lanza una excepcion
+ 2) Ejecuta una consola web
+ 3) Abre el navegador con la url
+ 4) Nada
 
-Respuesta correcta: <p style="color: black; background: black;">datetime.now()</p>
+Respuesta correcta: <p style="color: black; background: black;">Abre el navegador con la url
+</p>
 ### ¿Que hace el siguiente codigo?
 
 	try:
@@ -60,6 +63,13 @@ Respuesta correcta: <p style="color: black; background: black;">Imprime 'Error' 
 </p>
 
 ## Parte 2
+### Agregar return
+
+	def division(a, b)
+
+ 
+
+Respuesta correcta: <p style="color: black; background: black;"> def division(a, b):</p>
 ### Encontra y corregi los errores del siguiente modulo (se guarda como fecha.py)
 
 	import datetime
@@ -68,7 +78,8 @@ Respuesta correcta: <p style="color: black; background: black;">Imprime 'Error' 
 
 
 
-Respuesta correcta: <p style="color: black; background: black;">  return datetime.now()</p>
+Respuesta correcta: <p style="color: black; background: black;">  return datetime.now()
+</p>
 ### El siguiente codigo lanza un error. Indica cual y corregilo
 
 	archivo = open("datos.txt", "r")
@@ -80,39 +91,24 @@ Respuesta correcta: <p style="color: black; background: black;">  return datetim
 
 Respuesta correcta: <p style="color: black; background: black;">SyntaxError: archivo.closer() -> archivo.close()
 </p>
-### Completa el codigo para mostrar en pantalla todos los archivos en la carpeta actual
+### Transforma esta declaración en una con valor por defecto
 
-	import os
-	archivos = os._____(".")
-	for a in archivos:
-	  print(_____)
+	 def imprimir(texto)
 
+ 
 
-
-Respuesta correcta: <p style="color: black; background: black;">listdir, a</p>
-### Completa el codigo para capturar un error si el usuario escribe texto en lugar de un numero
-
-	try:
-	  valor = int(input("Ingrese un numero: "))
-	  print("Doble:", valor * 2)
-
-
-
-Respuesta correcta: <p style="color: black; background: black;">except Exception as e: print("Se ingreso texto")
-</p>
-### Completa el codigo para crear un archivo HTML que contenga un titulo "Programacion II" y abra el navegador para mostrarlo
-
-	import webbrowser
-	with open("pagina.html","w") as archivo:
-	  archivo.write(_____)
-	webbrowser.open("_____")
-
-
-
-Respuesta correcta: <p style="color: black; background: black;">"Programacion II", pagina.html
+Respuesta correcta: <p style="color: black; background: black;"> def imprimir(texto='Hello'):
 </p>
 
 ## Parte 3
+### Crea una función `maximo` que acepte una lista de enteros y retorne el más grande. 
+
+	 
+
+ 
+
+Respuesta correcta: <p style="color: black; background: black;"> def maximo(numeros: list[int]) -> int:\n    return max(numeros)
+</p>
 ### Simulá la creación de un entorno virtual y la instalacion del paquete cowsay. Incluí creacion, activación, instalación y exportación de requerimientos
 
 	
@@ -120,6 +116,13 @@ Respuesta correcta: <p style="color: black; background: black;">"Programacion II
 
 
 Respuesta correcta: <p style="color: black; background: black;">python3 -m venv entorno</p>
+### Crea una función que abra una lista de URLs una tras otra en nuevas pestañas.
+
+	 
+
+ 
+
+Respuesta correcta: <p style="color: black; background: black;"> def abrir_varias(urls: list[str]):</p>
 ### Dado el siguiente codigo, explica el resultado e indica si hay error
 
 	def agregar(lista=[]):
@@ -131,24 +134,11 @@ Respuesta correcta: <p style="color: black; background: black;">python3 -m venv 
 
 
 Respuesta correcta: <p style="color: black; background: black;">imprime ['x'] y despues ['x','x'], no tira ningun error</p>
-### Usando *args, escribí una funcion que devuela el mayor de todos los valores ingresados
+### Crea una función `unir` que reciba varias cadenas y las concatene con espacios. 
 
-	
+	 
 
+ 
 
-
-Respuesta correcta: <p style="color: black; background: black;">def max_args(*args):</p>
-### Implementá una función que reciba un string y retorne la longitud de la última palabra
-
-	
-
-
-
-Respuesta correcta: <p style="color: black; background: black;">def longitud_ultima_palabra(texto):</p>
-### Escribí una funcion que reciba un numero de DNI y retorne true si tiene 7 u 8 digitos validos, false si no
-
-	
-
-
-
-Respuesta correcta: <p style="color: black; background: black;">def verificar_dni(dni):</p>
+Respuesta correcta: <p style="color: black; background: black;"> def unir(*cadenas: str) -> str:\n    return " ".join(cadenas)
+</p>

@@ -27,10 +27,15 @@ def obtenerCantidadPreguntasDeTema(temaNum:int = 1):
   temasInfo = detectarTemas()
   for tema in temasInfo:
     if f'p{temaNum}.csv' in tema['partes']:
-      csv = open(f'./content/enunciados/{tema['nombre']}/p{temaNum}.csv', 'r')
-      temp = csv.readlines()
-      cont += len(temp)
-      csv.close()
+      try:
+        with open(f'./content/enunciados/{tema['nombre']}/p{temaNum}.csv', 'r') as f_in:
+          temp = (line.rstrip() for line in f_in) 
+          temp = list(line for line in temp if line)
+          cont += len(temp)
+
+      except Exception as e:
+        print(e)
+        input('debug enter para continuar...')
       
   os.chdir(dir_original) 
   return cont

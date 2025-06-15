@@ -9,6 +9,9 @@ def parseQuestionToStr(pregunta):
     except:
       pass
   
+  if len(pregunta) < 4:
+    return
+  
   pregunta[0] = '### ' + pregunta[0][0]  + '\n'
   pregunta[3] = 'Respuesta correcta: <p style="color: black; background: black;">' + pregunta[3][0] + '</p>'
   
