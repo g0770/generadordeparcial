@@ -38,8 +38,6 @@ Este programa fue desarrollado por Andrés Morales junto a Agustín Maggi. En la
 
 ### ▶️ ¿Cómo lo utilizo?
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Inbg9Pcu7u8?si=vMlHPHc7OZvnpmH3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 Estando dentro de la carpeta 'generadordeparcial' deberia encontrarse un archivo llamado main.py. Se deberá de ejecutar este mismo para empezar el programa.
 
 A continuación se mostrara un pequeño menú en una consola, debera de escribirse en ella el numero de opcion correspondiente para poder utilizarlo.

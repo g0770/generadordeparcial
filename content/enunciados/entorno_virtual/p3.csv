@@ -1,0 +1,1 @@
+Simulá la creación de un entorno virtual y la instalacion del paquete cowsay. Incluí creacion, activación, instalación y exportación de requerimientos;;;python3 -m venv entorno|source entorno/bin/activate|.\entorno\Scripts\activate|pip install cowsay|pip freeze > requirements.txt

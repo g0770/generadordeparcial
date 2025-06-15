@@ -1,2 +1,12 @@
 ¿Cual es el uso principal del modulo webbrowser?;;Crear formularios|Conectarse a bases de datos|Abrir paginas web en el navegador|Descargar imagenes;Abrir paginas web en el navegador
 ¿Cual es el modulo usado para abrir una URL en el navegador desde Python?;;netbrowser|requests|webbrowser|urllib;webbrowser
+¿Qué hace el módulo webbrowser en Python? ; ; Permite abrir URLs en un navegador web|Permite crear servidores web|Gestiona cookies|Analiza páginas HTML ; Permite abrir URLs en un navegador web
+¿Cómo se abre una URL en el navegador predeterminado usando webbrowser? ; import webbrowser|webbrowser.open('http://example.com') ; ; webbrowser.open('http://example.com')
+¿Qué función se usa para abrir una URL en una nueva pestaña? ; ; open_new_tab()|open_new_window()|open_tab()|open_url() ; open_new_tab()
+¿Cómo se importa el módulo webbrowser? ; ; import webbrowser|from webbrowser import *|import wb|import browser ; import webbrowser
+¿Es posible usar webbrowser para abrir un archivo local? ; ; Sí|No|Solo en Linux|Solo en Windows ; Sí
+¿Qué devuelve `webbrowser.open(url)`? ; ; True si la acción fue exitosa|El objeto navegador|Un error|Nada ; True si la acción fue exitosa
+¿Cómo se abre una URL en una nueva ventana del navegador? ; ; open_new_window()|open_window()|open_tab()|open() ; open_new_window()
+¿Se puede especificar qué navegador usar con webbrowser? ; ; Sí|No|Solo Chrome|Solo el predeterminado ; Sí
+¿Para qué sirve `webbrowser.get()`? ; ; Obtener un controlador del navegador|Abrir una pestaña nueva|Cerrar el navegador|Analizar HTML ; Obtener un controlador del navegador
+¿Qué módulo estándar de Python se usa para abrir URLs en navegadores web? ; ; webbrowser|urllib|requests|http.client ; webbrowser

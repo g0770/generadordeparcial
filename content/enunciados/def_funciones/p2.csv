@@ -1,0 +1,10 @@
+Declara una función llamada `sumar` que reciba 2 parámetros enteros, los sume y retorne el resultado. ; ; ; def sumar(a: int, b: int) -> int:\n    return a + b
+Corrige el código: ; def restar a, b:; ; def restar(a, b):
+Transforma esta declaración en una con valor por defecto; def imprimir(texto); ; def imprimir(texto='Hello'):
+Agregar tipo float al retorno de la funcion y sus parametros;def mult(a, b); ;def mult(a: float, b: float) -> float:
+Agregar return;def division(a, b); ; def division(a, b):|    return a / b
+Corrige el nombre de parámetros en ; def f(x, x)|    return x ; ; def f(x, y):|    return x + y
+Agregar `return` ; def suma(a, b) ; ; def suma(a, b):|    return a + b
+Completa; def rest(a, b):|    ____ a - b ; ; def rest(a, b):|    return a - b
+Corrige; def imprimir(**parametros) ; ; def imprimir(**parametros):
+Agregar anotaciones de tipos str a; def concatenar(a, b) ; ; def concatenar(a: str, b: str):

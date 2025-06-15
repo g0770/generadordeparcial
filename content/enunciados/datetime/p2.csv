@@ -1,0 +1,16 @@
+Escribe cómo restar 10 días a la fecha actual. ; import datetime|hoy = datetime.date.today()|nueva = hoy - datetime.timedelta(days=10) ; ;nueva = hoy - datetime.timedelta(days=10)
+Carga el 1 de enero de 2020 en un objeto date. ; import datetime|primero_enero = datetime.date(2020,1,1) ; ;primero_enero = datetime.date(2020,1,1)
+Imprime cuántos días han pasado entre el 1 de enero de 2020 y hoy. ; import datetime|primero_enero = datetime.date(2020,1,1)|diferencia = datetime.date.today() - primero_enero|print(diferencia.days) ; ;diferencia.days
+Carga la hora actual con datetime.datetime.now() en una variable. ; import datetime|ahora = datetime.datetime.now() ; ;ahora = datetime.datetime.now()
+Extrae la hora de now. ; import datetime|ahora = datetime.datetime.now()|print(ahora.hour) ; ;ahora.hour
+Carga una fecha a partir de una cadena en el formato “YYYY-MM-DD”. ; import datetime|fecha = datetime.datetime.strptime("2025-06-15", "%Y-%m-%d").date() ; ;fecha = datetime.datetime.strptime("2025-06-15", "%Y-%m-%d").date()
+Construye una fecha sumando 2 años a 2025-06-15. ; import datetime|original = datetime.date(2025,6,15)|nueva = datetime.date(2025 + 2,6,15) ; ;nueva = datetime.date(2025 + 2,6,15)
+Encuentra el nombre del día de la semana de 2025-06-15. ; import datetime|fecha = datetime.date(2025,6,15)|print(fecha.strftime("%A")) ; ;print(fecha.strftime("%A"))
+Carga la fecha y hora actual pero sin microsegundos. ; import datetime|ahora = datetime.datetime.now().replace(microsecond=0) ; ;ahora = datetime.datetime.now().replace(microsecond=0)
+Carga el último día de febrero de 2024 (año bisiesto). ; import datetime|ultimo_febrero = datetime.date(2024,2,29) ; ; ultimo_febrero = datetime.date(2024,2,29)
+Encuentra el error en el siguientes código (debería imprimir la fecha actual pero tiene un error de nombre) ; import datetime|print(date.datetime.now()) ; ; La referencia correcta es datetime.datetime.now()
+Completa el código para que `dias` contenga cuántos han pasado entre 2025-06-15 y 2025-06-10 ; import datetime|primero = datetime.date(2025,6,10)|segundo = datetime.date(2025,6,15)|dias = __________ ; ; dias = segundo - primero
+Corrige: ; import datetime|hoy = datetime(2025,6,15) ; ; Hay que usar datetime.date(2025,6,15)
+Completa: ; import datetime|nac = datetime.date(2000,1,1)|age = datetime.date.today().year - __________ ; ; age = datetime.date.today().year - nac.year
+
+

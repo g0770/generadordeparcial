@@ -1,0 +1,11 @@
+Usando datetime, escribí un programa que imprica cuántos dias faltan para el 1 de enero del proximo año.;;;from datetime import datetime|hoy = datetime.now()|primero_proximo_ano = datetime(hoy.year + 1, 1, 1)|dias_faltantes = (primero_proximo_ano - hoy).days|print(f"Faltan {dias_faltantes} días para el 1 de enero del próximo año.")
+Carga la fecha actual en una variable current. ; ; ; import datetime|current = datetime.date.today()
+Imprime cuánta diferencia en años hay entre el 1 de enero de 2000 y hoy. ; ; ; import datetime|years = datetime.date.today().year - datetime.date(2000, 1, 1).year|print(years)
+Carga la hora actual en una variable current_time. ; ; ; import datetime|current_time = datetime.datetime.now()
+Carga en future una fecha 30 días en el futuro. ; ; ; import datetime|future = datetime.date.today() + datetime.timedelta(days=30)
+Construye una fecha con el 25 de diciembre de 2025. ; ; ; import datetime|christmas = datetime.date(2025, 12, 25)
+Imprime el nombre del mes de Navidad 2025. ; ; ; import datetime|print(datetime.date(2025, 12, 25).strftime("%B"))
+Calcula cuántos minutos tiene 2 días. ; ; ; import datetime|minutes = 2 * 24 * 60|print(minutes)
+Carga el inicio de 2024 y restá­selo a la fecha actual. ; ; ; import datetime|delta = datetime.date.today() - datetime.date(2024, 1, 1)
+Carga en ayer la fecha de hace 1 día. ; ; ; import datetime|ayer = datetime.date.today() - datetime.timedelta(days=1)
+Carga en cumpleaños el 5 de julio de 2025 y verifica cuántos días falta. ; ; ; import datetime|cumpleaños = datetime.date(2025, 7, 5)|dias_faltantes = (cumpleaños - datetime.date.today()).days

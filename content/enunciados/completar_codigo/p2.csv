@@ -1,3 +1,0 @@
-Completa el codigo para capturar un error si el usuario escribe texto en lugar de un numero;try:|  valor = int(input("Ingrese un numero: "))|  print("Doble:", valor * 2);;except Exception as e: print("Se ingreso texto")
-Completa el codigo para crear un archivo HTML que contenga un titulo "Programacion II" y abra el navegador para mostrarlo;import webbrowser|with open("pagina.html","w") as archivo:|  archivo.write(_____)|webbrowser.open("_____");;"Programacion II", pagina.html
-Completa el codigo para mostrar en pantalla todos los archivos en la carpeta actual;import os|archivos = os._____(".")|for a in archivos:|  print(_____);;listdir, a

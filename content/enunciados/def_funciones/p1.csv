@@ -1,0 +1,10 @@
+¿Cómo se define una función en Python? ; ; ; def nombre():
+¿Qué palabra reservada se utiliza para regresar un valor en una función? ; ; return|yield|print|break ; return
+¿Cómo podemos dar un valor por defecto a un parámetro en Python? ; ; nombre(param='Valor')|nombre(param)=Valor|def nombre(param)=Valor|def nombre(param='Valor') ; def nombre(param='Valor')
+¿Qué hace `return` en una función? ; ; Detener ejecución|Devolver resultado|Salir del ciclo|Terminar el script ; Devolver resultado
+¿Cómo podemos especificar el tipo de parámetros en una función? ; ; sin tipos|con anotaciones|con comentarios|con assert ; con anotaciones
+¿Qué hace `*args` en una función? ; ; Acepta muchos parámetros posicionales|Carga archivos|Exporta variables|Compara tipos ; Acepta muchos parámetros posicionales
+¿Qué hace `**kwargs` en una función? ; ; Acepta muchos parámetros con nombre|Compara tipos|Captura errores|Ejecuta en paralelo ; Acepta muchos parámetros con nombre
+¿Cómo anotamos el tipo de retorno de una función? ; ; func() -> Tipo:|@return Tipo|return: Tipo|type(Tipo) ;func() -> Tipo:
+¿Qué hace `def f(a:int, b:str) -> bool:`? ; ; Define tipos de parámetros y de regreso|Carga archivos|Compara cadenas|Genera nuevo objeto ; Define tipos de parámetros y de regreso
+¿Cómo llamamos a una función con parámetros por nombre? ; ; f(1, 2)|f(a=1, b='foo')|f:{1, 2}|f[1, 2] ; f(a=1, b='foo')

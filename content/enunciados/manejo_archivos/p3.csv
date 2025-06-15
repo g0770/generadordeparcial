@@ -1,0 +1,1 @@
+Escribí una función crear_backup(nombre) que reciba un nombre de archivo y lo copie con sufijo _backup. Usar os y shutil.;;;import os|import shutil|def crear_backup(nombre):|    nuevo_nombre = nombre + '_backup'|    shutil.copy(nombre, nuevo_nombre)|    return nuevo_nombre

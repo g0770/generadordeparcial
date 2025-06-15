@@ -1,0 +1,1 @@
+Completa el codigo para mostrar en pantalla todos los archivos en la carpeta actual;import os|archivos = os._____(".")|for a in archivos:|  print(_____);;listdir, a

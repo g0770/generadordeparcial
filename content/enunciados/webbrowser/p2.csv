@@ -1,0 +1,10 @@
+Completa el codigo para crear un archivo HTML que contenga un titulo "Programacion II" y abra el navegador para mostrarlo;import webbrowser|with open("pagina.html","w") as archivo:|  archivo.write(_____)|webbrowser.open("_____");;"Programacion II", pagina.html
+Completa para abrir 'http://openai.com' en una nueva pestaña: ; import webbrowser|webbrowser._____('http://openai.com') ; ; webbrowser.open_new_tab('http://openai.com')
+Corrige el error;webbrowser.open('htp://google.com'); ; webbrowser.open('http://google.com')
+Lee y dice qué hace el código ;import webbrowser|webbrowser.open_new_window('https://python.org'); ; Abre https://python.org en una nueva ventana del navegador predeterminado
+Completa para abrir una URL usando Firefox: ; import webbrowser|firefox = webbrowser.get('firefox')|firefox.____('http://example.com') ; ; firefox.open('http://example.com')
+Corrige este código para abrir una URL en una pestaña nueva;webbrowser.open_newwindow('http://example.com'); ; webbrowser.open_new_window('http://example.com')
+¿Es correcto usar...  ...para abrir en nueva pestaña? Si no, corrige;webbrowser.open('http://test.com', new=2); ; Sí, es correcto.
+¿Para qué sirve el parámetro `new` en `webbrowser.open()`? ; ; ; Controla si abrir en ventana, pestaña o actual.
+Corrige el error en;webbrowser.open('http://example.com', new='two'); ; Debe ser un entero, por ejemplo new=2
+¿Qué hace el siguiente codigo? ;webbrowser.open('https://docs.python.org', autoraise=False); ; Abre la URL sin forzar que la ventana del navegador quede al frente

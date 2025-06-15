@@ -1,1 +1,11 @@
 ¿Cual es la funcion correcta para obtener la fecha de hoy?;;os.today()|datetime.now()|datetime.date.today()|date.time.now();datetime.now()
+¿Qué hace datetime.datetime.now() en Python? ; import datetime|print(datetime.datetime.now()) ; Devuelve la fecha y hora actual|Cierra el programa|Borra el caché|Compara dos fechas ; Devuelve la fecha y hora actual
+¿Qué módulo se utiliza en Python para trabajar con fecha y hora? ; ; datetime|date|time|clock ; datetime
+¿Cómo puedes crear un objeto date en Python? ; import datetime|hoy = datetime.date(2025,6,15) ; datetime.date(2025,6,15)|new datetime(2025,6,15)|date(2025,6,15)|datetime(2025,6,15) ; datetime.date(2025,6,15)
+¿Qué hace datetime.date.today()? ; import datetime|print(datetime.date.today()) ; Muestra el primero de mes|Muestra el último de mes|Muestra la fecha actual|Muestra el año ; Muestra la fecha actual
+¿Cómo puedes obtener el año de una fecha en Python? ; import datetime|hoy = datetime.date(2025,6,15)|print(hoy.year) ; fecha.year|date.year|datetime.year|time.year ; fecha.year
+Cómo puedes sumar 5 días a una fecha en Python? ; import datetime|hoy = datetime.date(2025,6,15)|nueva = hoy + datetime.timedelta(days=5) ; + 5|timedelta|shift|add_days ; timedelta
+¿Qué hace datetime.timedelta? ;  ; Carga nuevas zonas horarias|Compara dos fechas|Suma o resta a una fecha|Carga configuración regional ; Suma o resta a una fecha
+Cómo imprimirías el mes de una fecha? ; import datetime|hoy = datetime.date(2025,6,15)|print(hoy.month) ; day|month|second|minute ; month
+Qué método formatea fecha en texto? ; import datetime|hoy = datetime.date(2025,6,15)|print(hoy.strftime("%Y-%m-%d")) ; strftime|print|format|toString ; strftime
+Qué hace %Y en strftime("%Y")? ;  ; Muestra el mes|Muestra el año en 4 dígitos|Muestra el día|Muestra la hora ; Muestra el año en 4 dígitos
