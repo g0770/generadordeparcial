@@ -3,12 +3,12 @@
 
 Generador de parciales con varios tipos de preguntas a partir de un conjunto de preguntas posibles. Con posibilidad de agregar, borrar o editar las preguntas que quieras ademas de contar con un script facil de utilizar para configurar a tu gusto.
 
-* [💼 Desarrolladores](#desarrolladores)
-* [🧩 Tecnologias utilizadas](#tecnologias-utilizadas)
-* [🚀 ¿Cómo empezar?](#como-empezar)
-  * [▶️ ¿Cómo lo utilizo?](#como-lo-utilizo)
-  * [🤔 ¿Cómo añado/edito/borro preguntas?](#como-añado-edito-borro-preguntas)
-* [📜 Licencia & Copyright](#licencia-&-copyright)
+* [💼 Desarrolladores](#-desarrolladores)
+* [🧩 Tecnologias utilizadas](#-tecnologias-utilizadas)
+* [🚀 ¿Cómo empezar?](#-cómo-empezar)
+  * [▶️ ¿Cómo lo utilizo?](#%EF%B8%8F-cómo-lo-utilizo)
+  * [🤔 ¿Cómo añado/edito/borro preguntas?](#-cómo-añadoeditoborro-preguntas)
+* [📜 Licencia & Copyright](#-licencia--copyright)
 
 ## 💼 Desarrolladores
 
@@ -24,17 +24,21 @@ Este programa fue desarrollado por Andrés Morales junto a Agustín Maggi. En la
 
 ## 🚀 ¿Cómo empezar?
 
-1) Clonar el repositorio
+1 - Clonar el repositorio
 
     git clone https://github.com/g0770/generadordeparcial.git
 
-2) Navegar a la carpeta creada
+2 - Navegar a la carpeta creada
 
     cd generadordeparcial
 
-3) Instalar las dependencias
+3 - Instalar las dependencias
 
     pip install -r requirements.txt
+
+4 - Abrir el programa
+
+    python main.py
 
 ### ▶️ ¿Cómo lo utilizo?
 

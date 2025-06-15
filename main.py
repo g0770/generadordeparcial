@@ -23,6 +23,8 @@ def generateQuestions():
   global programSettings
   
   cantP = []
+  for i in range(len(programSettings['contenido'])):
+    programSettings['contenido'][f'parte {i+1}'] = []
   for index in range(programSettings['partes']):
     while True:
       tempCantPreg = inputExc(int, f"Cuantas preguntas de la Parte {index+1}? (max: {programSettings['cantPreguntasMax'][index]}): ")

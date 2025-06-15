@@ -42,7 +42,6 @@ def obtenerCantidadPreguntasDeTema(temaNum:int = 1):
 
 def temasQueTieneNParte(temaNum:int = 1):
   dir_original = os.getcwd()
-  cont = 0
   temasInfo = detectarTemas()
   temasNombres = []
   for tema in temasInfo:
