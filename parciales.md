@@ -1,27 +1,47 @@
 # Simulacro de Parcial 
+
 ## Parte 1
-### ¿Cual es el uso principal del modulo webbrowser?
+### ¿Que hace pip install -r requirements.txt?
 
 	
 
- 1) Crear formularios
- 2) Conectarse a bases de datos
- 3) Abrir paginas web en el navegador
- 4) Descargar imagenes
+ 1) Guarda la lista de paquetes
+ 2) Instala los paquetes listados en el archivo
+ 3) Elimina todos los paquetes
+ 4) Crea un entorno virtual
 
-Respuesta correcta: <p style="color: black; background: black;">Abrir paginas web en el navegador
+Respuesta correcta: <p style="color: black; background: black;">Instala los paquetes listados en el archivo
 </p>
-### ¿Que imprime este codigo?
+### ¿Cual de estos errores es capturado con except ZeroDivisionError?
 
-	x=5
-	print(f'Resultado {x+3}')
+	
 
- 1) Resultado: x+3
- 2) Resultado: 53
- 3) Resultado: 8
- 4) Error
+ 1) Acceso fuera de rango
+ 2) Division por cero
+ 3) Conversion de tipo
+ 4) Archivo no encontrado
 
-Respuesta correcta: <p style="color: black; background: black;">Resultado: 8</p>
+Respuesta correcta: <p style="color: black; background: black;">Division por cero</p>
+### ¿Que hace pip freeze > requirements.txt?
+
+	
+
+ 1) Muestra los paquetes instalados
+ 2) Instala paquetes
+ 3) Elimina pip
+ 4) Guarda los paquetes instalados en un archivo
+
+Respuesta correcta: <p style="color: black; background: black;">Muestra los paquetes instalados</p>
+### ¿Cual es la funcion correcta para obtener la fecha de hoy?
+
+	
+
+ 1) os.today()
+ 2) datetime.now()
+ 3) datetime.date.today()
+ 4) date.time.now()
+
+Respuesta correcta: <p style="color: black; background: black;">datetime.now()</p>
 ### ¿Que hace el siguiente codigo?
 
 	try:
@@ -38,50 +58,17 @@ Respuesta correcta: <p style="color: black; background: black;">Resultado: 8</p>
 
 Respuesta correcta: <p style="color: black; background: black;">Imprime 'Error' y 'Fin'
 </p>
-### ¿Que hace open('archivo.txt', 'a')?
 
-	
-
- 1) Reemplaza el contenido del archivo
- 2) Lee y cierra el archivo
- 3) Abre el archivo para agregar contenido
- 4) Abre un archivo para lectura binaria
-
-Respuesta correcta: <p style="color: black; background: black;">Abre el archivo para agregar contenido
-</p>
-### ¿Que modulo se usa para trabajar con archivos y rutas?
-
-	
-
- 1) os
- 2) random
- 3) pip
- 4) collections
-
-Respuesta correcta: <p style="color: black; background: black;">os
-</p>
 ## Parte 2
-### Completa el codigo para crear un archivo HTML que contenga un titulo "Programacion II" y abra el navegador para mostrarlo
+### Encontra y corregi los errores del siguiente modulo (se guarda como fecha.py)
 
-	import webbrowser
-	with open("pagina.html","w") as archivo:
-	  archivo.write(_____)
-	webbrowser.open("_____")
-
-
-
-Respuesta correcta: <p style="color: black; background: black;">"Programacion II", pagina.html
-</p>
-### Completa el codigo para mostrar en pantalla todos los archivos en la carpeta actual
-
-	import os
-	archivos = os._____(".")
-	for a in archivos:
-	  print(_____)
+	import datetime
+	def hoy():
+	return datetime.today
 
 
 
-Respuesta correcta: <p style="color: black; background: black;">listdir, a</p>
+Respuesta correcta: <p style="color: black; background: black;">  return datetime.now()</p>
 ### El siguiente codigo lanza un error. Indica cual y corregilo
 
 	archivo = open("datos.txt", "r")
@@ -93,22 +80,75 @@ Respuesta correcta: <p style="color: black; background: black;">listdir, a</p>
 
 Respuesta correcta: <p style="color: black; background: black;">SyntaxError: archivo.closer() -> archivo.close()
 </p>
-### Encontra y corregi los errores del siguiente modulo (se guarda como fecha.py)
+### Completa el codigo para mostrar en pantalla todos los archivos en la carpeta actual
 
-	import datetime
-	def hoy():
-	return datetime.today
+	import os
+	archivos = os._____(".")
+	for a in archivos:
+	  print(_____)
 
 
 
-Respuesta correcta: <p style="color: black; background: black;">  return datetime.now()
+Respuesta correcta: <p style="color: black; background: black;">listdir, a</p>
+### Completa el codigo para capturar un error si el usuario escribe texto en lugar de un numero
+
+	try:
+	  valor = int(input("Ingrese un numero: "))
+	  print("Doble:", valor * 2)
+
+
+
+Respuesta correcta: <p style="color: black; background: black;">except Exception as e: print("Se ingreso texto")
 </p>
-### Indica la salida esperada o el error
+### Completa el codigo para crear un archivo HTML que contenga un titulo "Programacion II" y abra el navegador para mostrarlo
 
-	lista=[1,2,3]
-	print(lista[5])
+	import webbrowser
+	with open("pagina.html","w") as archivo:
+	  archivo.write(_____)
+	webbrowser.open("_____")
 
 
 
-Respuesta correcta: <p style="color: black; background: black;">IndexError: list index out of range
+Respuesta correcta: <p style="color: black; background: black;">"Programacion II", pagina.html
 </p>
+
+## Parte 3
+### Simulá la creación de un entorno virtual y la instalacion del paquete cowsay. Incluí creacion, activación, instalación y exportación de requerimientos
+
+	
+
+
+
+Respuesta correcta: <p style="color: black; background: black;">python3 -m venv entorno</p>
+### Dado el siguiente codigo, explica el resultado e indica si hay error
+
+	def agregar(lista=[]):
+		lista.append('x')
+		return lista
+	print(agregar())
+	print(agregar())
+
+
+
+Respuesta correcta: <p style="color: black; background: black;">imprime ['x'] y despues ['x','x'], no tira ningun error</p>
+### Usando *args, escribí una funcion que devuela el mayor de todos los valores ingresados
+
+	
+
+
+
+Respuesta correcta: <p style="color: black; background: black;">def max_args(*args):</p>
+### Implementá una función que reciba un string y retorne la longitud de la última palabra
+
+	
+
+
+
+Respuesta correcta: <p style="color: black; background: black;">def longitud_ultima_palabra(texto):</p>
+### Escribí una funcion que reciba un numero de DNI y retorne true si tiene 7 u 8 digitos validos, false si no
+
+	
+
+
+
+Respuesta correcta: <p style="color: black; background: black;">def verificar_dni(dni):</p>

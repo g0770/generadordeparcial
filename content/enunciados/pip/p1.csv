@@ -1,0 +1,2 @@
+¿Que hace pip install -r requirements.txt?;;Guarda la lista de paquetes|Instala los paquetes listados en el archivo|Elimina todos los paquetes|Crea un entorno virtual;Instala los paquetes listados en el archivo
+¿Que hace pip freeze > requirements.txt?;;Muestra los paquetes instalados|Instala paquetes|Elimina pip|Guarda los paquetes instalados en un archivo;Muestra los paquetes instalados

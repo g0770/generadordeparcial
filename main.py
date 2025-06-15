@@ -7,11 +7,12 @@ from content.modules.mainModules import inputExc, menuOptions, clearCmd
 #variables del programa
 
 programDefaultSettings = {
-  'partes': 2,
-  'cantPreguntasMax':  [fm.obtenerCantidadPreguntasDeTema(1), fm.obtenerCantidadPreguntasDeTema(2)],
+  'partes': 3,
+  'cantPreguntasMax':  [fm.obtenerCantidadPreguntasDeTema(1), fm.obtenerCantidadPreguntasDeTema(2), fm.obtenerCantidadPreguntasDeTema(3)],
   'contenido': {
     'parte 1': [],
-    'parte 2': []
+    'parte 2': [],
+    'parte 3': []
   }
 }
 programSettings = programDefaultSettings.copy()

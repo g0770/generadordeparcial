@@ -47,7 +47,7 @@ def toMarkDown(contenido):
   md.write('# Simulacro de Parcial \n')
   
   for index,value in contenido['contenido'].items():
-    md.write(f'## {index.title()}\n')
+    md.write(f'\n## {index.title()}\n')
     for i in value:
       md.write(i)  
     

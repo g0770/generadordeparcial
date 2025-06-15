@@ -1,0 +1,1 @@
+¿Cual es la funcion correcta para obtener la fecha de hoy?;;os.today()|datetime.now()|datetime.date.today()|date.time.now();datetime.now()

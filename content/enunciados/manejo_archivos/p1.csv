@@ -1,0 +1,4 @@
+¿Que hace os.listdir()?;;Crea un archivo|Lista carpetas disponibles|Lista archivos y carpetas del directorio actual|Cambia de directorio;Lista carpetas disponibles
+¿Que modulo se usa para trabajar con archivos y rutas?;;os|random|pip|collections;os
+¿Que hace open('archivo.txt', 'a')?;;Reemplaza el contenido del archivo|Lee y cierra el archivo|Abre el archivo para agregar contenido|Abre un archivo para lectura binaria;Abre el archivo para agregar contenido
+¿Que hace os.makedirs(""nueva/carpeta"") si no existe?;;Falla si no existe|Crea solo "carpeta"|Crea todo el arbol de carpetas|Renombra la carpeta actual;Crea todo el arbol de carpetas

@@ -1,0 +1,3 @@
+Indica la salida esperada o el error;lista=[1,2,3]|print(lista[5]);;IndexError: list index out of range
+El siguiente codigo lanza un error. Indica cual y corregilo;archivo = open("datos.txt", "r")|lineas = archivo.read()|print(lineas)|archivo.closer();;SyntaxError: archivo.closer() -> archivo.close()
+Encontra y corregi los errores del siguiente modulo (se guarda como fecha.py);import datetime|def hoy():|return datetime.today;;  return datetime.now()
