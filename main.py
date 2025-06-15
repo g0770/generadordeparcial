@@ -45,20 +45,24 @@ def generateQuestions():
 
 generateQuestions()
 while True:
-  clearCmd()
-  r = menuOptions(responseMsg='Ingrese la opción del menú principal a continuación: ')
-  match r:
-    case 0:
-      break
-    case 1:
-      generateQuestions()
-    case 2:
-      qm.toMarkDown(programSettings)
-      print("Simulacro generado como 'parciales.md'")
-      input('Enter para continuar... ')
-    case 3:
-      qm.toPDF(programSettings)
-      print("Simulacro generado como 'parciales.pdf'")
-      input('Enter para continuar... ')
-    case 4:
-      programSettings = s.settingsMain(programSettings, programDefaultSettings)
+  try:
+    clearCmd()
+    r = menuOptions(responseMsg='Ingrese la opción del menú principal a continuación: ')
+    match r:
+      case 0:
+        break
+      case 1:
+        generateQuestions()
+      case 2:
+        qm.toMarkDown(programSettings)
+        print("Simulacro generado como 'parciales.md'")
+        input('Enter para continuar... ')
+      case 3:
+        qm.toPDF(programSettings)
+        print("Simulacro generado como 'parciales.pdf'")
+        input('Enter para continuar... ')
+      case 4:
+        programSettings = s.settingsMain(programSettings, programDefaultSettings)
+  except Exception as e:
+    print(e)
+    input('debug enter para continuar... ')
