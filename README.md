@@ -5,6 +5,7 @@ Generador de parciales con varios tipos de preguntas a partir de un conjunto de 
 
 * [💼 Desarrolladores](#-desarrolladores)
 * [🧩 Tecnologias utilizadas](#-tecnologias-utilizadas)
+* [🎬 Video Explicativo](#-video-explicativo)
 * [🚀 ¿Cómo empezar?](#-cómo-empezar)
   * [▶️ ¿Cómo lo utilizo?](#%EF%B8%8F-cómo-lo-utilizo)
   * [🤔 ¿Cómo añado/edito/borro preguntas?](#-cómo-añadoeditoborro-preguntas)
@@ -20,7 +21,9 @@ Este programa fue desarrollado por Andrés Morales junto a Agustín Maggi. En la
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | <img src="https://imgs.search.brave.com/IMLB7FHvpWKelXYxvu7zD7wGW2RkeaYq_CUl3s1YPx4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzcyLzgw/LzJkLzcyODAyZDFl/YjliMGM5ODk5MTRi/ZGE4ZWYxYzZiMGFj/LmpwZw" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> |
 
+## 🎬 Video Explicativo
 
+[Haga click aqui para entrar al video](https://youtu.be/XfRqcKTX5ms)
 
 ## 🚀 ¿Cómo empezar?
 
