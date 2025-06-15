@@ -19,7 +19,6 @@ Este programa fue desarrollado por Andrés Morales junto a Agustín Maggi. En la
 
 | Python | defusedxml | FontTools | Fpdf2 | Markdown | pillow |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| <img src="https://imgs.search.brave.com/IMLB7FHvpWKelXYxvu7zD7wGW2RkeaYq_CUl3s1YPx4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzcyLzgw/LzJkLzcyODAyZDFl/YjliMGM5ODk5MTRi/ZGE4ZWYxYzZiMGFj/LmpwZw" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> | <img src="" width=50 height=50> |
 
 ## 🎬 Video Explicativo
 
