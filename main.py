@@ -4,6 +4,8 @@ import content.modules.fileManager as fm
 import content.modules.settings as s
 from content.modules.mainModules import inputExc, menuOptions, clearCmd
 
+#variables del programa
+
 programDefaultSettings = {
   'partes': 2,
   'cantPreguntasMax':  [fm.obtenerCantidadPreguntasDeTema(1), fm.obtenerCantidadPreguntasDeTema(2)],
@@ -14,6 +16,33 @@ programDefaultSettings = {
 }
 programSettings = programDefaultSettings.copy()
 
+#funciones
+
+def generateQuestions():
+  global programSettings
+  
+  cantP = []
+  for index in range(programSettings['partes']):
+    while True:
+      tempCantPreg = inputExc(int, f"Cuantas preguntas de la Parte {index+1}? (max: {programSettings['cantPreguntasMax'][index]}): ")
+      if tempCantPreg >= 0 and tempCantPreg <= programSettings['cantPreguntasMax'][index]:
+        break
+    cantP.append(tempCantPreg)
+  for index, value in enumerate(cantP):
+    if value <= 0:
+      programSettings['contenido'][f'parte {index+1}'].append('### NO QUESTION FOUND')
+    else:
+      for i in range(value):
+        while True:
+          temasPosibles = fm.temasQueTieneNParte(index+1)
+          tempQuestion = qm.questionCreation(part=f'{index+1}', questionType=temasPosibles[random.randint(0,len(temasPosibles)-1)])
+          if tempQuestion not in programSettings['contenido'][f'parte {index+1}']:
+            programSettings['contenido'][f'parte {index+1}'].append(tempQuestion)
+            break
+
+#main
+
+generateQuestions()
 while True:
   clearCmd()
   r = menuOptions(responseMsg='Ingrese la opción del menú principal a continuación: ')
@@ -21,24 +50,7 @@ while True:
     case 0:
       break
     case 1:
-      cantP = []
-      for index in range(programSettings['partes']):
-        while True:
-          tempCantPreg = inputExc(int, f"Cuantas preguntas de la Parte {index+1}? (max: {programSettings['cantPreguntasMax'][index]}): ")
-          if tempCantPreg >= 0 and tempCantPreg <= programSettings['cantPreguntasMax'][index]:
-            break
-        cantP.append(tempCantPreg)
-      for index, value in enumerate(cantP):
-        if value <= 0:
-          programSettings['contenido'][f'parte {index+1}'].append('### NO QUESTION FOUND')
-        else:
-          for i in range(value):
-            while True:
-              temasPosibles = fm.temasQueTieneNParte(index+1)
-              tempQuestion = qm.questionCreation(part=f'{index+1}', questionType=temasPosibles[random.randint(0,len(temasPosibles)-1)])
-              if tempQuestion not in programSettings['contenido'][f'parte {index+1}']:
-                programSettings['contenido'][f'parte {index+1}'].append(tempQuestion)
-                break
+      generateQuestions()
     case 2:
       qm.toMarkDown(programSettings)
       print("Simulacro generado como 'parciales.md'")
